@@ -14,5 +14,6 @@ public class ResultException extends RuntimeException {
     public ResultException(Integer code, String msg) {
         super(msg);
         this.code = code;
+        System.out.println("123");
     }
 }
