@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <excelConfig>
+        <param name="excelType" value="xlsx"></param>
+        <param name="excelColumns" value="10"></param>
+    </excelConfig>
+
+    <reqConfig>
+        <param name="reqTimeout" value="20000"></param>
+        <param name="reqContentTypeJson" value="application/json"></param>
+        <param name="reqContentTypeForm" value="application/x-www-form-urlencoded"></param>
+    </reqConfig>
+
+    <headerConfig>
+        <param name="User-Agent" value="Mozilla/5.0"></param>
+        <param name="Accept" value="*/*"></param>
+        <param name="ticket" value="qQKZ9lpAP3E8+R72AlY/P9cm3txDQ0igttF7oevw8ug="></param>
+        <param name="Accept-Language" value="zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3"></param>
+        <param name="Accept-Encoding" value="gzip, deflate"></param>
+    </headerConfig>
+
+    <dbcpConfig>
+        <param name="BatchSql" value="insert into autolog(testCase,reqType,reqUrl,reqData,expResult,actResult,result,execTime) values (?,?,?,?,?,?,?,?)"></param>
+
+        <param name="DriverClassName" value="com.mysql.jdbc.Driver"></param>
+        <param name="Url" value="jdbc:mysql://172.17.31.248:3306/canal?characterEncoding=UTF-8"></param>
+        <param name="Username" value="root"></param>
+        <param name="Password" value="123456"></param>
+        <param name="InitialSize" value="3"></param>
+        <param name="MinIdle" value="3"></param>
+        <param name="MaxIdle" value="3"></param>
+        <param name="MaxActive" value="3"></param>
+        <param name="TestOnBorrow" value="false"></param>
+        <param name="TestOnReturn" value="false"></param>
+        <param name="MaxWait" value="2000"></param>
+        <param name="PoolPreparedStatements" value="true"></param>
+    </dbcpConfig>
+    <emailConfig>
+        <!--发件服务器地址，即SMTP服务器地址-->
+        <param name="host" value="smtp.zmail300.cn" />
+        <!--发件人-->
+        <param name="from" value="yangqin@300.cn" />
+        <!--收件人,存在多个用则;分割-->
+        <param name="to" value="yangqin@300.cn;740479865@qq.com" />
+        <!--抄送，存在多个用则;分割-->
+        <param name="cc" value="" />
+        <!--密送，存在多个用则;分割-->
+        <param name="bcc" value="" />
+        <!--协议类型填写SSL或者TLS-->
+        <param name="type" value="ssl" />
+        <!--使用SSL或者TLS时需要授权，授权用户名称-->
+        <param name="AuthorUsername" value="yangqin@300.cn" />
+        <!--使用SSL或者TLS时需要授权，授权码-->
+        <param name="AuthorCode" value="yangqin@3378" />
+        <!--发件人名称-->
+        <param name="senderName" value="Evils" />
+        <!--附件名称-->
+        <param name="AttachName" value="report.html" />
+        <!--附件路径-->
+        <param name="AttachPath" value="test-output/index.html" />
+        <!--图片路径-->
+        <param name="imagePath" value="test-output/imageTest.jpg" />
+        <!--图片附件标题-->
+        <param name="imageTitle" value="Attached Image" />
+
+
+    </emailConfig>
+</root>
+
