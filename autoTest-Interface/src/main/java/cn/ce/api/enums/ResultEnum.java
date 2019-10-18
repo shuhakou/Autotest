@@ -26,4 +26,14 @@ public enum  ResultEnum  {
         this.code = code;
         this.msg = msg;
     }
+
+	public String getMsg() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Integer getCode() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
